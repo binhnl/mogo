@@ -1,0 +1,52 @@
+:root {
+    --primary-color: #999999;
+    --secondary-color: #f8f8f8;
+    --white: white;
+    --black: black;
+    --bg-block: #ffffff;
+    --color-heading: #333333;
+    --primary-font: "Roboto";
+    --secondary-font: "Montserrat", sans-serif;
+    --brand-title-font: "Kaushan Script", cursive;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    color: var(--primary-color);
+    background-color: var(--white);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 192rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    max-width: 123rem;
+    padding: 0 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
