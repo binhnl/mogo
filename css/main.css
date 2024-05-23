@@ -2,6 +2,7 @@
     position: relative;
     color: var(--white);
     height: 6.2rem;
+    z-index: 9;
 }
 
 .banner {
@@ -46,10 +47,6 @@
     align-items: center;
 }
 
-.header-menu-list-item {
-    padding: 2.2rem 2.4rem;
-}
-
 .header-menu-list-item__link {
     font-size: 1.4rem;
     color: var(--white);
@@ -57,6 +54,7 @@
     font-weight: 400;
     font-family: var(--secondary-font);
     text-align: center;
+    padding: 2.2rem 2.4rem;
 }
 
 .header-menu-list-item:hover .header-menu-list-item__link {
@@ -546,6 +544,8 @@
     transform: translateX(-50%);
     font-size: 2.3rem;
     color: #ccc;
+    cursor: pointer;
+    z-index: 5;
 }
 
 .quote-list .slick-prev {
