@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
           integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/setting.css">
     <link rel="stylesheet" href="css/main.css">
@@ -24,8 +25,8 @@
 <header class="header">
     <div class="container">
         <nav class="header-menu">
-            <a href="#" class="header-menu--logo">
-                <img src="images/mogo_logo.png" alt="">
+            <a href="#">
+                <img src="images/mogo_logo.png" alt="" data-aos="flip-left">
             </a>
             <ul class="header-menu-list">
                 <li class="header-menu-list-item">
@@ -55,60 +56,67 @@
                 </li>
             </ul>
         </nav>
+        <a href="javascript:void(0);" id="header-mobile--icon" class="header-mobile--icon">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
 </header>
 
 <div class="banner">
     <div class="container">
-        <h1 class="banner__heading">Creative Template</h1>
-        <h2 class="banner-heading__brand">Welcome <br> to mogo</h2>
-        <a href="" class="banner__btn">Learn more</a>
+        <h1 class="banner__heading" data-aos="fade-right">Creative Template</h1>
+        <h2 class="banner__brand" data-aos="fade-right">Welcome <br> to mogo</h2>
+        <a href="" class="banner__btn" data-aos="fade-up" data-aos-offset="100">Learn more</a>
         <div class="banner-slider">
             <ul class="banner-slider-list">
-                <li class="banner-slider-list-item banner-slider-list-item--active">
+                <li class="banner-slider-list-item banner-slider-list-item--active" data-aos="fade-up-right"
+                    data-aos-duration="100">
                     01
                     <span class="banner-slider-list-item__text">Intro</span>
                 </li>
-                <li class="banner-slider-list-item">02 <span class="banner-slider-list-item__text">Work</span></li>
-                <li class="banner-slider-list-item">03 <span class="banner-slider-list-item__text">About</span></li>
-                <li class="banner-slider-list-item">04 <span class="banner-slider-list-item__text">Contacts</span></li>
+                <li class="banner-slider-list-item" data-aos="fade-up-right" data-aos-duration="200">02 <span
+                        class="banner-slider-list-item__text">Work</span></li>
+                <li class="banner-slider-list-item" data-aos="fade-up-right" data-aos-duration="300">03 <span
+                        class="banner-slider-list-item__text">About</span></li>
+                <li class="banner-slider-list-item" data-aos="fade-up-right" data-aos-duration="400">04 <span
+                        class="banner-slider-list-item__text">Contacts</span></li>
             </ul>
         </div>
     </div>
 </div>
 
-<div class="about">
+<div class="about" data-aos="fade-right">
     <div class="container">
-        <h2 class="content__question">What we do</h2>
-        <h3 class="content__heading">Story about us</h3>
+        <h2 class="section__ttl">What we do</h2>
+        <h3 class="section__txt">Story about us</h3>
         <p class="content__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.
         </p>
-        <ul class="about-pics-list">
-            <li class="about-pics-list-item">
-                <div class="about-pics-list-item--hover">
-                    <img src="images/about_img-1.png" alt="" class="about-pics-list-item__bg">
-                    <a href="#" class="about-pics-list-item-brand">
+        <ul class="about-list">
+            <li class="about-list-item">
+                <div class="about-list-item--hover" data-aos="zoom-in-up">
+                    <img src="images/about_img-1.png" alt="" class="about-list-item__bg">
+                    <a href="#" class="about-list-item-brand">
                         <img src="images/super_team.png" alt="">
                         <p>Super team</p>
                     </a>
                 </div>
             </li>
-            <li class="about-pics-list-item">
-                <div class="about-pics-list-item--hover">
-                    <img src="images/about_img-2.png" alt="" class="about-pics-list-item__bg">
-                    <a href="#" class="about-pics-list-item-brand">
+            <li class="about-list-item">
+                <div class="about-list-item--hover" data-aos="zoom-in-up">
+                    <img src="images/about_img-2.png" alt="" class="about-list-item__bg">
+                    <a href="#" class="about-list-item-brand">
                         <img src="images/super_team.png" alt="">
                         <p>Super team</p>
                     </a>
                 </div>
             </li>
-            <li class="about-pics-list-item">
-                <div class="about-pics-list-item--hover">
-                    <img src="images/about_img-3.png" alt="" class="about-pics-list-item__bg">
-                    <a href="#" class="about-pics-list-item-brand">
+            <li class="about-list-item">
+                <div class="about-list-item--hover" data-aos="zoom-in-up">
+                    <img src="images/about_img-3.png" alt="" class="about-list-item__bg">
+                    <a href="#" class="about-list-item-brand">
                         <img src="images/super_team.png" alt="">
                         <p>Super team</p>
                     </a>
@@ -118,40 +126,40 @@
     </div>
 </div>
 
-<div class="facts">
+<div class="facts" data-aos="fade-right">
     <div class="container">
         <div class="facts-list">
             <div class="facts-list-item">
-                <p class="facts-list-item__number">42</p>
+                <p class="facts-list-item__number" data-target="42">0</p>
                 <p class="facts-list-item__txt">Web Design Projects</p>
             </div>
             <div class="facts-list-item">
-                <p class="facts-list-item__number">123</p>
+                <p class="facts-list-item__number" data-target="123">0</p>
                 <p class="facts-list-item__txt">happy client</p>
             </div>
             <div class="facts-list-item">
-                <p class="facts-list-item__number">15</p>
+                <p class="facts-list-item__number" data-target="15">0</p>
                 <p class="facts-list-item__txt">award winner</p>
             </div>
             <div class="facts-list-item">
-                <p class="facts-list-item__number">99</p>
+                <p class="facts-list-item__number" data-target="99">0</p>
                 <p class="facts-list-item__txt">cup of coffee</p>
             </div>
             <div class="facts-list-item">
-                <p class="facts-list-item__number">24</p>
+                <p class="facts-list-item__number" data-target="24">0</p>
                 <p class="facts-list-item__txt">members</p>
             </div>
         </div>
     </div>
 </div>
 
-<div class="service">
+<div class="service" data-aos="fade-right">
     <div class="container">
-        <h2 class="content__question">We work with</h2>
-        <h3 class="content__heading">Amazing services</h3>
+        <h2 class="section__ttl">We work with</h2>
+        <h3 class="section__txt">Amazing services</h3>
 
         <div class="service-list">
-            <div class="service-list-item">
+            <div class="service-list-item" data-aos="fade-up">
                 <div class="service-list-item__img">
                     <img src="images/sr-1.png" alt="">
                 </div>
@@ -163,7 +171,7 @@
                         tempor.</p>
                 </div>
             </div>
-            <div class="service-list-item">
+            <div class="service-list-item" data-aos="fade-up">
                 <div class="service-list-item__img">
                     <img src="images/sr-2_.png" alt="">
                 </div>
@@ -174,7 +182,7 @@
                         tempor.</p>
                 </div>
             </div>
-            <div class="service-list-item">
+            <div class="service-list-item" data-aos="fade-up">
                 <div class="service-list-item__img">
                     <img src="images/sr-3.png" alt="">
                 </div>
@@ -185,7 +193,7 @@
                         tempor.</p>
                 </div>
             </div>
-            <div class="service-list-item">
+            <div class="service-list-item" data-aos="fade-up">
                 <div class="service-list-item__img">
                     <img src="images/book.png" alt="">
                 </div>
@@ -195,7 +203,7 @@
                         eiusmod.</p>
                 </div>
             </div>
-            <div class="service-list-item">
+            <div class="service-list-item" data-aos="fade-up">
                 <div class="service-list-item__img">
                     <img src="images/sr_5.png" alt="">
                 </div>
@@ -205,7 +213,7 @@
                         tempor.</p>
                 </div>
             </div>
-            <div class="service-list-item">
+            <div class="service-list-item" data-aos="fade-up">
                 <div class="service-list-item__img">
                     <img src="images/sr_6.png" alt="">
                 </div>
@@ -219,30 +227,30 @@
     </div>
 </div>
 
-<div class="feature">
+<div class="feature" data-aos="fade-right">
     <div class="container">
-        <h2 class="content__question">For all devices</h2>
-        <h3 class="content__heading">Unique design</h3>
-    
+        <h2 class="section__ttl">For all devices</h2>
+        <h3 class="section__txt">Unique design</h3>
+
         <div class="feature-design">
-            <img src="images/story_about.png" alt="" class="feature-design__img">
-            <img src="images/phone.png" alt="" class="feature-design__img--above">
+            <img src="images/story_about.png" alt="" class="feature-design__img"  data-aos="fade-up">
+            <img src="images/phone.png" alt="" class="feature-design__img--above"  data-aos="fade-up">
         </div>
     </div>
 </div>
 
-<div class="service">
+<div class="service" data-aos="fade-right">
     <div class="container">
-        <h2 class="content__question">Service</h2>
-        <h3 class="content__heading">What we do</h3>
+        <h2 class="section__ttl">Service</h2>
+        <h3 class="section__txt">What we do</h3>
         <p class="content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
             laboris nisi ut aliquip ex ea commodo consequat. </p>
         <div class="service-design">
-            <div class="service-design-pic">
+            <div class="service-design-pic" data-aos="fade-right" data-aos-duration="500">
                 <img src="images/serve1_img.png" alt="" class="service-design-pic__img">
             </div>
-            <div class="service-design-accordion">
+            <div class="service-design-accordion" data-aos="fade-left" data-aos-duration="500">
                 <div class="service-design-accordion-smooth">
                     <div class="service-design-accordion-smooth-header">
                         <img src="images/pic-icon-1.png" alt="">
@@ -299,57 +307,57 @@
 <div class="quote">
     <div class="container">
         <div class="quote-list">
-            <div class="quote-item">
-                <div class="quote-item__img">
+            <div class="quote-list-item" data-aos="fade-right" data-aos-duration="500">
+                <div class="quote-list-item__img">
                     <img src="images/quote_img.png" alt="">
                 </div>
-                <div class="quote-item-content">
-                    <p class="quote-item-content__text">
+                <div class="quote-list-item-content">
+                    <p class="quote-list-item-content__text">
                         “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore
                         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
                     </p>
-                    <p class="quote-item-content__author">Jon Doe</p>
+                    <p class="quote-list-item-content__author">Jon Doe</p>
                 </div>
             </div>
 
-            <div class="quote-item">
-                <div class="quote-item__img">
+            <div class="quote-list-item" data-aos="fade-right" data-aos-duration="500">
+                <div class="quote-list-item__img">
                     <img src="images/quote_img.png" alt="">
                 </div>
-                <div class="quote-item-content">
-                    <p class="quote-item-content__text">
+                <div class="quote-list-item-content">
+                    <p class="quote-list-item-content__text">
                         “One Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         ut
                         labore
                         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
                     </p>
-                    <p class="quote-item-content__author">Jon Doe</p>
+                    <p class="quote-list-item-content__author">Jon Doe</p>
                 </div>
             </div>
 
-            <div class="quote-item">
-                <div class="quote-item__img">
+            <div class="quote-list-item" data-aos="fade-right" data-aos-duration="500">
+                <div class="quote-list-item__img">
                     <img src="images/quote_img.png" alt="">
                 </div>
-                <div class="quote-item-content">
-                    <p class="quote-item-content__text">
+                <div class="quote-list-item-content">
+                    <p class="quote-list-item-content__text">
                         “Two Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         ut
                         labore
                         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
                     </p>
-                    <p class="quote-item-content__author">Jon Doe</p>
+                    <p class="quote-list-item-content__author">Jon Doe</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="team">
+<div class="team" data-aos="fade-right">
     <div class="container">
-        <h2 class="content__question">Who we are</h2>
-        <h3 class="content__heading">Meet our team</h3>
+        <h2 class="section__ttl">Who we are</h2>
+        <h3 class="section__txt">Meet our team</h3>
         <p class="content__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -357,7 +365,7 @@
         </p>
 
         <div class="team-list">
-            <div class="team-list-item">
+            <div class="team-list-item" data-aos="zoom-in-up">
                 <div class="team-list-item-img">
                     <div class="team-list-item-img--hover">
                         <img src="images/our_team-1.png" alt="">
@@ -374,7 +382,7 @@
                     <p class="team-list-item-content__role">Graphic design</p>
                 </div>
             </div>
-            <div class="team-list-item">
+            <div class="team-list-item" data-aos="zoom-in-up">
                 <div class="team-list-item-img">
                     <div class="team-list-item-img--hover">
                         <img src="images/out_team-2.png" alt="">
@@ -391,7 +399,7 @@
                     <p class="team-list-item-content__role">Branding/UX design</p>
                 </div>
             </div>
-            <div class="team-list-item">
+            <div class="team-list-item" data-aos="zoom-in-up">
                 <div class="team-list-item-img">
                     <div class="team-list-item-img--hover">
                         <img src="images/our_team-3.png" alt="">
@@ -412,26 +420,26 @@
     </div>
 </div>
 
-<div class="logos">
+<div class="logos" data-aos="zoom-in">
     <div class="container">
         <img src="images/logos_bg.png" alt="" class="logos__img">
     </div>
 </div>
 
-<div class="work">
+<div class="work" data-aos="fade-right">
     <div class="container">
-        <h2 class="content__question">What we do</h2>
-    <h3 class="content__heading">some of our work</h3>
-    <p class="content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <h2 class="section__ttl">What we do</h2>
+        <h3 class="section__txt">some of our work</h3>
+        <p class="content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. </p>
     </div>
 </div>
 
 <div class="pics">
     <div class="pics-list">
         <div class="pics-list-item pics-list-item--double">
-            <div class="pics-list-item-img">
+            <div class="pics-list-item-img" data-aos="flip-right">
                 <img src="images/images-1.png" alt="">
                 <div class="pics-list-item-img--hover">
                     <img src="images/pic-hover.png" alt="">
@@ -439,7 +447,7 @@
                     <p>Lorem ipsum dolor sit</p>
                 </div>
             </div>
-            <div class="pics-list-item-img">
+            <div class="pics-list-item-img" data-aos="flip-right">
                 <img src="images/images-2.png" alt="">
                 <div class="pics-list-item-img--hover">
                     <img src="images/pic-hover.png" alt="">
@@ -449,7 +457,7 @@
             </div>
         </div>
         <div class="pics-list-item pics-list-item--double">
-            <div class="pics-list-item-img">
+            <div class="pics-list-item-img" data-aos="flip-right">
                 <img src="images/images-3.png" alt="">
                 <div class="pics-list-item-img--hover">
                     <img src="images/pic-hover.png" alt="">
@@ -457,7 +465,7 @@
                     <p>Lorem ipsum dolor sit</p>
                 </div>
             </div>
-            <div class="pics-list-item-img">
+            <div class="pics-list-item-img" data-aos="flip-right">
                 <img src="images/images-4.png" alt="">
                 <div class="pics-list-item-img--hover">
                     <img src="images/pic-hover.png" alt="">
@@ -467,7 +475,7 @@
             </div>
         </div>
         <div class="pics-list-item pics-list-item--simple">
-            <div class="pics-list-item-img">
+            <div class="pics-list-item-img" data-aos="flip-right">
                 <img src="images/images-5.png" alt="">
                 <div class="pics-list-item-img--hover">
                     <img src="images/pic-hover.png" alt="">
@@ -477,7 +485,7 @@
             </div>
         </div>
         <div class="pics-list-item pics-list-item--double">
-            <div class="pics-list-item-img">
+            <div class="pics-list-item-img" data-aos="flip-right">
                 <img src="images/images-6.png" alt="">
                 <div class="pics-list-item-img--hover">
                     <img src="images/pic-hover.png" alt="">
@@ -485,7 +493,7 @@
                     <p>Lorem ipsum dolor sit</p>
                 </div>
             </div>
-            <div class="pics-list-item-img">
+            <div class="pics-list-item-img" data-aos="flip-right">
                 <img src="images/images-7.png" alt="">
                 <div class="pics-list-item-img--hover">
                     <img src="images/pic-hover.png" alt="">
@@ -500,47 +508,47 @@
 <div class="quote quote--white">
     <div class="container">
         <div class="quote-list">
-            <div class="quote-item">
-                <div class="quote-item__img quote-item__img--radius">
+            <div class="quote-list-item" data-aos="fade-right" data-aos-duration="500">
+                <div class="quote-list-item__img quote-list-item__img--radius">
                     <img src="images/radius.png" alt="">
                 </div>
-                <div class="quote-item-content">
-                    <p class="quote-item-content__text">
+                <div class="quote-list-item-content">
+                    <p class="quote-list-item-content__text">
                         “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore
                         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
                     </p>
-                    <p class="quote-item-content__author">Joshua Earle</p>
+                    <p class="quote-list-item-content__author">Joshua Earle</p>
                 </div>
             </div>
 
-            <div class="quote-item">
-                <div class="quote-item__img quote-item__img--radius">
+            <div class="quote-list-item" data-aos="fade-right" data-aos-duration="500">
+                <div class="quote-list-item__img quote-list-item__img--radius">
                     <img src="images/radius.png" alt="">
                 </div>
-                <div class="quote-item-content">
-                    <p class="quote-item-content__text">
+                <div class="quote-list-item-content">
+                    <p class="quote-list-item-content__text">
                         “One Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         ut
                         labore
                         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
                     </p>
-                    <p class="quote-item-content__author">Joshua Earle</p>
+                    <p class="quote-list-item-content__author">Joshua Earle</p>
                 </div>
             </div>
 
-            <div class="quote-item">
-                <div class="quote-item__img quote-item__img--radius">
+            <div class="quote-list-item" data-aos="fade-right" data-aos-duration="500">
+                <div class="quote-list-item__img quote-list-item__img--radius">
                     <img src="images/radius.png" alt="">
                 </div>
-                <div class="quote-item-content">
-                    <p class="quote-item-content__text">
+                <div class="quote-list-item-content">
+                    <p class="quote-list-item-content__text">
                         “Two Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         ut
                         labore
                         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
                     </p>
-                    <p class="quote-item-content__author">Joshua Earle</p>
+                    <p class="quote-list-item-content__author">Joshua Earle</p>
                 </div>
             </div>
         </div>
@@ -549,11 +557,11 @@
 
 <div class="review">
     <div class="container">
-        <h2 class="content__question">Happy Clients</h2>
-        <h3 class="content__heading">What people say</h3>
+        <h2 class="section__ttl">Happy Clients</h2>
+        <h3 class="section__txt">What people say</h3>
 
         <div class="review-list">
-            <div class="review-list-item">
+            <div class="review-list-item" data-aos="fade-right" data-aos-duration="500" data-aos-offset="-500">
                 <div class="review-list-item--avatar">
                     <img src="images/review-1.png" alt="">
                 </div>
@@ -565,7 +573,7 @@
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
                 </div>
             </div>
-            <div class="review-list-item">
+            <div class="review-list-item" data-aos="fade-left" data-aos-duration="500" data-aos-offset="-500">
                 <div class="review-list-item--avatar">
                     <img src="images/review-2.png" alt="">
                 </div>
@@ -576,8 +584,8 @@
                         incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                 </div>
-            </div>
-            <div class="review-list-item">
+            </div >
+            <div class="review-list-item" data-aos="fade-right" data-aos-duration="500" data-aos-offset="-500">
                 <div class="review-list-item--avatar">
                     <img src="images/reivew-3.png" alt="">
                 </div>
@@ -589,7 +597,7 @@
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                 </div>
             </div>
-            <div class="review-list-item">
+            <div class="review-list-item" data-aos="fade-left" data-aos-duration="500" data-aos-offset="-500">
                 <div class="review-list-item--avatar">
                     <img src="images/review-4.png" alt="">
                 </div>
@@ -605,13 +613,13 @@
     </div>
 </div>
 
-<div class="blog">
+<div class="blog" data-aos="fade-right">
     <div class="container">
-        <h2 class="content__question">Our stories</h2>
-        <h3 class="content__heading">Latest blog</h3>
+        <h2 class="section__ttl">Our stories</h2>
+        <h3 class="section__txt">Latest blog</h3>
 
         <div class="blog-list">
-            <div class="blog-list-item">
+            <div class="blog-list-item" data-aos="fade-up" data-aos-offset="-500">
                 <a href="#" class="blog-list-img">
                     <img src="images/blog-1.png" alt="">
                     <div class="blog-list-img__cld">
@@ -626,12 +634,12 @@
                 </div>
                 <div class="blog-list-action">
                     <img src="images/eye.png" alt="">
-                    <span class="blog-list-action-view">542</span>
+                    <span>542</span>
                     <img src="images/aw.png" alt="">
-                    <span class="blog-list-action-speech">17</span>
+                    <span>17</span>
                 </div>
             </div>
-            <div class="blog-list-item">
+            <div class="blog-list-item" data-aos="fade-up" data-aos-offset="-500">
                 <a href="#" class="blog-list-img">
                     <img src="images/blog-2.png" alt="">
                     <div class="blog-list-img__cld">
@@ -651,7 +659,7 @@
                     <span class="blog-list-action-speech">17</span>
                 </div>
             </div>
-            <div class="blog-list-item">
+            <div class="blog-list-item" data-aos="fade-up" data-aos-offset="-500">
                 <a href="#" class="blog-list-img">
                     <img src="images/blog-3.png" alt="">
                     <div class="blog-list-img__cld">
@@ -675,7 +683,7 @@
     </div>
 </div>
 
-<div class="map">
+<div class="map" data-aos="zoom-in">
     <img src="images/map-icon.png" alt="" class="map__icon">
     <h3 class="map__title">Open map</h3>
 </div>
@@ -689,7 +697,7 @@
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                 <p class="footer-inner-contact__followers"><span>15k</span> followers</p>
-                <div class="footer-inner-contact-social">
+                <div class="footer-inner-contact__social">
                     <span>Follow Us: </span>
                     <img src="images/f-fb.png" alt="">
                     <img src="images/f-tw.png" alt="">
@@ -710,14 +718,14 @@
                 <div class="footer-inner-blogs-list">
                     <div class="footer-inner-blogs-list-item">
                         <img src="images/f-l-1.png" alt="">
-                        <div class="footer-inner-blogs-list-item-content">
+                        <div class="footer-inner-blogs-list-item__content">
                             <h3>Lorem ipsum dolor sit amet, consectetur adipiscing</h3>
                             <p>Jan 9, 2016</p>
                         </div>
                     </div>
                     <div class="footer-inner-blogs-list-item">
                         <img src="images/f-l-2.png" alt="">
-                        <div class="footer-inner-blogs-list-item-content">
+                        <div class="footer-inner-blogs-list-item__content">
                             <h3>Consectetur adipiscing elit,
                                 sed do eiusmod tempor</h3>
                             <p>Jan 9, 2016</p>
@@ -725,7 +733,7 @@
                     </div>
                     <div class="footer-inner-blogs-list-item">
                         <img src="images/f-l-3.png" alt="">
-                        <div class="footer-inner-blogs-list-item-content">
+                        <div class="footer-inner-blogs-list-item__content">
                             <h3>sed do eiusmod tempor
                                 incididunt ut labore</h3>
                             <p>Jan 9, 2016</p>
@@ -735,7 +743,7 @@
             </div>
             <div class="footer-inner-social">
                 <h3 class="footer-inner-social__title">Instagram</h3>
-                <div class="footer-inner-social-list">
+                <div class="footer-inner-social__img">
                     <img src="images/f-s-1.png" alt="">
                     <img src="images/f-s-2.png" alt="">
                     <img src="images/f-s-3.png" alt="">
@@ -746,15 +754,15 @@
                     <img src="images/f-s-8.png" alt="">
                     <img src="images/f-s-9.png" alt="">
                 </div>
-                <p class="footer-inner-social-list__note">View more photos</p>
+                <p class="footer-inner-social__txt">View more photos</p>
             </div>
         </div>
-        <p class="footer-copyright">
+        <p class="footer__copyright">
             © 2016 MoGo free PSD template by <span>Laaqiq</span>
         </p>
     </div>
 </footer>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
