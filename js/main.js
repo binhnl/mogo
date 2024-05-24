@@ -1,6 +1,6 @@
 $(document).ready(function () {
     AOS.init();
-    $('#header-mobile--icon').on('click', function () {
+    $('#header__icon').on('click', function () {
         let navMobile = $('.header-menu-list');
         navMobile.toggleClass('menu-mobile--show');
     });
