@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../yebo_bicycle/.idea/html_css.iml" filepath="$PROJECT_DIR$/../yebo_bicycle/.idea/html_css.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/mogo.iml" filepath="$PROJECT_DIR$/.idea/mogo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../vjp.admin.portal/.idea/vjp.admin.portal.iml" filepath="$PROJECT_DIR$/../vjp.admin.portal/.idea/vjp.admin.portal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/mogo-old.iml" filepath="$PROJECT_DIR$/.idea/mogo-old.iml" />
     </modules>
   </component>
 </project>
