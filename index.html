@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -8,8 +9,9 @@
     <title>Mogo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
           integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -21,36 +23,39 @@
     <link rel="stylesheet" href="css/setting.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-<header class="header">
+<header id="header" class="header">
     <div class="container">
         <nav class="header-menu">
-            <a href="#">
-                <img src="images/mogo_logo.png" alt="" data-aos="flip-left">
-            </a>
+            <h1 class="header-menu__logo">
+                <a href="#">
+                    <img src="images/mogo_logo.png" alt="" data-aos="flip-left">
+                </a>
+            </h1>
             <ul class="header-menu-list">
                 <li class="header-menu-list-item">
-                    <a href="" class="header-menu-list-item__link">About</a>
+                    <a href="#about" class="header-menu-list-item__link">About</a>
                 </li>
                 <li class="header-menu-list-item">
-                    <a href="" class="header-menu-list-item__link">Service</a>
+                    <a href="#service" class="header-menu-list-item__link">Service</a>
                 </li>
                 <li class="header-menu-list-item">
-                    <a href="" class="header-menu-list-item__link">Work</a>
+                    <a href="#work" class="header-menu-list-item__link">Work</a>
                 </li>
                 <li class="header-menu-list-item">
-                    <a href="" class="header-menu-list-item__link">Blog</a>
+                    <a href="#blog" class="header-menu-list-item__link">Blog</a>
                 </li>
                 <li class="header-menu-list-item">
-                    <a href="" class="header-menu-list-item__link">Contact</a>
+                    <a href="#contact" class="header-menu-list-item__link">Contact</a>
                 </li>
                 <li class="header-menu-list-item">
-                    <a href="" class="header-menu-list-item__link">
+                    <a href="#" class="header-menu-list-item__link">
                         <img src="images/icon_shoppe.png" alt="">
                     </a>
                 </li>
                 <li class="header-menu-list-item">
-                    <a href="" class="header-menu-list-item__link">
+                    <a href="#" class="header-menu-list-item__link">
                         <img src="images/icon_search.png" alt="">
                     </a>
                 </li>
@@ -63,38 +68,91 @@
 </header>
 
 <div class="banner">
-    <img src="images/bg-header.png" class="banner-bg" alt="">
-    <div class="container">
-        <h1 class="banner__heading" data-aos="fade-right">Creative Template</h1>
-        <h2 class="banner__brand" data-aos="fade-right">Welcome <br> to mogo</h2>
-        <a href="" class="banner__btn" data-aos="fade-up" data-aos-offset="100">Learn more</a>
-        <div class="banner-slider">
-            <ul class="banner-slider-list">
-                <li class="banner-slider-list-item banner-slider-list-item--active" data-aos="fade-up-right"
-                    data-aos-duration="100">
+    <div class="banner-list">
+        <div class="banner-list-item">
+            <img src="images/bg-header.png" class="banner-list-item__bg" alt="">
+            <div class="banner-list-item-content">
+                <div class="container">
+                    <h2 class="banner-list-item-content__heading" data-aos="fade-right">Creative Template</h2>
+                    <h3 class="banner-list-item-content__brand" data-aos="fade-right">Welcome<br>to mogo</h3>
+                    <a href="#" class="banner-list-item-content__btn" data-aos="fade-up" data-aos-offset="100">
+                        Learn more
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="banner-list-item">
+            <img src="images/naru.png" class="banner-list-item__bg" alt="">
+            <div class="banner-list-item-content">
+                <div class="container">
+                    <h2 class="banner-list-item-content__heading" data-aos="fade-right">Creative Template</h2>
+                    <h3 class="banner-list-item-content__brand" data-aos="fade-right">Welcome<br>to yecle</h3>
+                    <a href="#" class="banner-list-item-content__btn" data-aos="fade-up" data-aos-offset="100">
+                        Learn more
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="banner-list-item">
+            <img src="images/bg-header.png" class="banner-list-item__bg" alt="">
+            <div class="banner-list-item-content">
+                <div class="container">
+                    <h2 class="banner-list-item-content__heading" data-aos="fade-right">Creative Template</h2>
+                    <h3 class="banner-list-item-content__brand" data-aos="fade-right">Welcome<br>to nagano</h3>
+                    <a href="#" class="banner-list-item-content__btn" data-aos="fade-up" data-aos-offset="100">
+                        Learn more
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="banner-list-item">
+            <img src="images/naru.png" class="banner-list-item__bg" alt="">
+            <div class="banner-list-item-content">
+                <div class="container">
+                    <h2 class="banner-list-item-content__heading" data-aos="fade-right">Creative Template</h2>
+                    <h3 class="banner-list-item-content__brand" data-aos="fade-right">Welcome<br>to toroto</h3>
+                    <a href="#" class="banner-list-item-content__btn" data-aos="fade-up" data-aos-offset="100">
+                        Learn more
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner-nav">
+        <div class="container">
+            <ul class="banner-nav-list">
+                <li class="banner-nav-list-item" data-aos="fade-up-right" data-aos-duration="100">
                     01
-                    <span class="banner-slider-list-item__text">Intro</span>
+                    <span class="banner-nav-list-item__txt">Intro</span>
                 </li>
-                <li class="banner-slider-list-item" data-aos="fade-up-right" data-aos-duration="200">02 <span
-                        class="banner-slider-list-item__text">Work</span></li>
-                <li class="banner-slider-list-item" data-aos="fade-up-right" data-aos-duration="300">03 <span
-                        class="banner-slider-list-item__text">About</span></li>
-                <li class="banner-slider-list-item" data-aos="fade-up-right" data-aos-duration="400">04 <span
-                        class="banner-slider-list-item__text">Contacts</span></li>
+                <li class="banner-nav-list-item" data-aos="fade-up-right" data-aos-duration="200">
+                    02
+                    <span class="banner-nav-list-item__txt">Work</span>
+                </li>
+                <li class="banner-nav-list-item" data-aos="fade-up-right" data-aos-duration="300">
+                    03
+                    <span class="banner-nav-list-item__txt">About</span>
+                </li>
+                <li class="banner-nav-list-item" data-aos="fade-up-right" data-aos-duration="400">
+                    04
+                    <span class="banner-nav-list-item__txt">Contacts</span>
+                </li>
             </ul>
         </div>
     </div>
 </div>
 
-<div class="about" data-aos="fade-right">
+<div id="about" class="about" data-aos="fade-right">
     <div class="container">
-        <h2 class="section__ttl">What we do</h2>
-        <h3 class="section__sub">Story about us</h3>
-        <p class="section__txt">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
-        </p>
+        <div class="section-outline">
+            <h2 class="section-outline__ttl">What we do</h2>
+            <h3 class="section-outline__sub">Story about us</h3>
+            <p class="section-outline__txt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.
+            </p>
+        </div>
         <ul class="about-list">
             <li class="about-list-item">
                 <div class="about-list-item-zoom" data-aos="zoom-in-up">
@@ -127,12 +185,12 @@
     </div>
 </div>
 
-<div class="facts" data-aos="fade-right">
+<div id="facts" class="facts" data-aos="fade-right">
     <div class="container">
         <div class="facts-list">
             <div class="facts-list-item">
                 <p class="facts-list-item__number" data-target="42">0</p>
-                <p class="facts-list-item__txt">Web Design Projects</p>
+                <p class="facts-list-item__txt">web Design Projects</p>
             </div>
             <div class="facts-list-item">
                 <p class="facts-list-item__number" data-target="123">0</p>
@@ -154,22 +212,22 @@
     </div>
 </div>
 
-<div class="service" data-aos="fade-right">
+<div id="service" class="service" data-aos="fade-right">
     <div class="container">
-        <h2 class="section__ttl">We work with</h2>
-        <h3 class="section__sub">Amazing services</h3>
-
+        <div class="section-outline">
+            <h2 class="section-outline__ttl">We work with</h2>
+            <h3 class="section-outline__sub">Amazing services</h3>
+        </div>
         <div class="service-list">
             <div class="service-list-item" data-aos="fade-up">
                 <div class="service-list-item__img">
                     <img src="images/sr-1.png" alt="">
                 </div>
                 <div class="service-list-item-content">
-                    <h3 class="service-list-item-content__title">Photography</h3>
-                    <p class="service-list-item-content__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed
-                        do eiusmod
-                        tempor.</p>
+                    <h3 class="service-list-item-content__ttl">Photography</h3>
+                    <p class="service-list-item-content__txt">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </p>
                 </div>
             </div>
             <div class="service-list-item" data-aos="fade-up">
@@ -177,10 +235,10 @@
                     <img src="images/sr-2_.png" alt="">
                 </div>
                 <div class="service-list-item-content">
-                    <h3 class="service-list-item-content__title">Web Design</h3>
-                    <p class="service-list-item-content__txt">Ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod
-                        tempor.</p>
+                    <h3 class="service-list-item-content__ttl">Web Design</h3>
+                    <p class="service-list-item-content__txt">
+                        Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </p>
                 </div>
             </div>
             <div class="service-list-item" data-aos="fade-up">
@@ -188,10 +246,10 @@
                     <img src="images/sr-3.png" alt="">
                 </div>
                 <div class="service-list-item-content">
-                    <h3 class="service-list-item-content__title">Creativity</h3>
-                    <p class="service-list-item-content__txt">Dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod
-                        tempor.</p>
+                    <h3 class="service-list-item-content__ttl">Creativity</h3>
+                    <p class="service-list-item-content__txt">
+                        Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </p>
                 </div>
             </div>
             <div class="service-list-item" data-aos="fade-up">
@@ -199,9 +257,10 @@
                     <img src="images/book.png" alt="">
                 </div>
                 <div class="service-list-item-content">
-                    <h3 class="service-list-item-content__title">Seo</h3>
-                    <p class="service-list-item-content__txt">Ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod.</p>
+                    <h3 class="service-list-item-content__ttl">Seo</h3>
+                    <p class="service-list-item-content__txt">
+                        Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                    </p>
                 </div>
             </div>
             <div class="service-list-item" data-aos="fade-up">
@@ -209,9 +268,10 @@
                     <img src="images/sr_5.png" alt="">
                 </div>
                 <div class="service-list-item-content">
-                    <h3 class="service-list-item-content__title">CSS/HTML</h3>
-                    <p class="service-list-item-content__txt">Lorem dolor sit amet, consectetur adipiscing elit, sed do
-                        tempor.</p>
+                    <h3 class="service-list-item-content__ttl">CSS/HTML</h3>
+                    <p class="service-list-item-content__txt">
+                        Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.
+                    </p>
                 </div>
             </div>
             <div class="service-list-item" data-aos="fade-up">
@@ -219,20 +279,22 @@
                     <img src="images/sr_6.png" alt="">
                 </div>
                 <div class="service-list-item-content">
-                    <h3 class="service-list-item-content__title">digital</h3>
-                    <p class="service-list-item-content__txt">Sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor.</p>
+                    <h3 class="service-list-item-content__ttl">Digital</h3>
+                    <p class="service-list-item-content__txt">
+                        Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="feature" data-aos="fade-right">
+<div id="feature" class="feature" data-aos="fade-right">
     <div class="container">
-        <h2 class="section__ttl">For all devices</h2>
-        <h3 class="section__sub">Unique design</h3>
-
+        <div class="section-outline">
+            <h2 class="section-outline__ttl">For all devices</h2>
+            <h3 class="section-outline__sub">Unique design</h3>
+        </div>
         <div class="feature-design">
             <img src="images/story_about.png" alt="" class="feature-design__img" data-aos="fade-up">
             <img src="images/phone.png" alt="" class="feature-design__above" data-aos="fade-up">
@@ -242,11 +304,15 @@
 
 <div class="service" data-aos="fade-right">
     <div class="container">
-        <h2 class="section__ttl">Service</h2>
-        <h3 class="section__sub">What we do</h3>
-        <p class="section__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <div class="section-outline">
+            <h2 class="section-outline__ttl">Service</h2>
+            <h3 class="section-outline__sub">What we do</h3>
+            <p class="section-outline__txt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.
+            </p>
+        </div>
         <div class="service-design">
             <div class="service-design-pic" data-aos="fade-right" data-aos-duration="500">
                 <img src="images/serve1_img.png" alt="" class="service-design-pic__img">
@@ -258,13 +324,11 @@
                         <p>Photography</p>
                     </div>
                     <p class="service-design-accordion-smooth__panel">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                        in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                        laborum.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
 
@@ -274,13 +338,11 @@
                         <p>creativity</p>
                     </div>
                     <p class="service-design-accordion-smooth__panel">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                        in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                        laborum.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
 
@@ -290,13 +352,11 @@
                         <p>web design</p>
                     </div>
                     <p class="service-design-accordion-smooth__panel">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                        in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                        laborum.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
 
@@ -314,7 +374,8 @@
                 </div>
                 <div class="quote-list-item-content">
                     <p class="quote-list-item-content__text">
-                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
                         labore
                         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
                     </p>
@@ -328,7 +389,8 @@
                 </div>
                 <div class="quote-list-item-content">
                     <p class="quote-list-item-content__text">
-                        “One Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        “One Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt
                         ut
                         labore
                         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
@@ -343,7 +405,8 @@
                 </div>
                 <div class="quote-list-item-content">
                     <p class="quote-list-item-content__text">
-                        “Two Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        “Two Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt
                         ut
                         labore
                         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
@@ -357,30 +420,31 @@
 
 <div class="team" data-aos="fade-right">
     <div class="container">
-        <h2 class="section__ttl">Who we are</h2>
-        <h3 class="section__sub">Meet our team</h3>
-        <p class="section__txt">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
-        </p>
-
+        <div class="section-outline">
+            <h2 class="section-outline__ttl">Who we are</h2>
+            <h3 class="section-outline__sub">Meet our team</h3>
+            <p class="section-outline__txt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.
+            </p>
+        </div>
         <div class="team-list">
             <div class="team-list-item" data-aos="zoom-in-up">
                 <div class="team-list-item-img">
                     <div class="team-list-item-img-zoom">
                         <img src="images/our_team-1.png" alt="">
                         <div class="team-list-item-img-zoom-social">
-                            <a href="" class="team-list-item-img-zoom-social__link">
+                            <a href="#" class="team-list-item-img-zoom-social__link">
                                 <i class="fa-brands fa-facebook-f"></i>
                             </a>
-                            <a href="" class="team-list-item-img-zoom-social__link">
+                            <a href="#" class="team-list-item-img-zoom-social__link">
                                 <i class="fa-brands fa-twitter"></i>
                             </a>
-                            <a href="" class="team-list-item-img-zoom-social__link">
+                            <a href="#" class="team-list-item-img-zoom-social__link">
                                 <i class="fa-brands fa-pinterest-p"></i>
                             </a>
-                            <a href="" class="team-list-item-img-zoom-social__link">
+                            <a href="#" class="team-list-item-img-zoom-social__link">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
@@ -396,16 +460,16 @@
                     <div class="team-list-item-img-zoom">
                         <img src="images/out_team-2.png" alt="">
                         <div class="team-list-item-img-zoom-social">
-                            <a href="" class="team-list-item-img-zoom-social__link">
+                            <a href="#" class="team-list-item-img-zoom-social__link">
                                 <i class="fa-brands fa-facebook-f"></i>
                             </a>
-                            <a href="" class="team-list-item-img-zoom-social__link">
+                            <a href="#" class="team-list-item-img-zoom-social__link">
                                 <i class="fa-brands fa-twitter"></i>
                             </a>
-                            <a href="" class="team-list-item-img-zoom-social__link">
+                            <a href="#" class="team-list-item-img-zoom-social__link">
                                 <i class="fa-brands fa-pinterest-p"></i>
                             </a>
-                            <a href="" class="team-list-item-img-zoom-social__link">
+                            <a href="#" class="team-list-item-img-zoom-social__link">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
@@ -421,16 +485,16 @@
                     <div class="team-list-item-img-zoom">
                         <img src="images/our_team-3.png" alt="">
                         <div class="team-list-item-img-zoom-social">
-                            <a href="" class="team-list-item-img-zoom-social__link">
+                            <a href="#" class="team-list-item-img-zoom-social__link">
                                 <i class="fa-brands fa-facebook-f"></i>
                             </a>
-                            <a href="" class="team-list-item-img-zoom-social__link">
+                            <a href="#" class="team-list-item-img-zoom-social__link">
                                 <i class="fa-brands fa-twitter"></i>
                             </a>
-                            <a href="" class="team-list-item-img-zoom-social__link">
+                            <a href="#" class="team-list-item-img-zoom-social__link">
                                 <i class="fa-brands fa-pinterest-p"></i>
                             </a>
-                            <a href="" class="team-list-item-img-zoom-social__link">
+                            <a href="#" class="team-list-item-img-zoom-social__link">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
@@ -451,13 +515,17 @@
     </div>
 </div>
 
-<div class="work" data-aos="fade-right">
+<div id="work" class="work" data-aos="fade-right">
     <div class="container">
-        <h2 class="section__ttl">What we do</h2>
-        <h3 class="section__sub">some of our work</h3>
-        <p class="section__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <div class="section-outline">
+            <h2 class="section-outline__ttl">What we do</h2>
+            <h3 class="section-outline__sub">some of our work</h3>
+            <p class="section-outline__txt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.
+            </p>
+        </div>
     </div>
 </div>
 
@@ -466,7 +534,7 @@
         <div class="pics-list-item">
             <div class="pics-list-item-img" data-aos="flip-right">
                 <img src="images/images-1.png" alt="">
-                <div class="pics-list-item-img--hover">
+                <div class="pics-list-item-img__flip">
                     <img src="images/pic-hover.png" alt="">
                     <h3>creatively designed</h3>
                     <p>Lorem ipsum dolor sit</p>
@@ -474,7 +542,7 @@
             </div>
             <div class="pics-list-item-img" data-aos="flip-right">
                 <img src="images/images-2.png" alt="">
-                <div class="pics-list-item-img--hover">
+                <div class="pics-list-item-img__flip">
                     <img src="images/pic-hover.png" alt="">
                     <h3>creatively designed</h3>
                     <p>Lorem ipsum dolor sit</p>
@@ -484,7 +552,7 @@
         <div class="pics-list-item">
             <div class="pics-list-item-img" data-aos="flip-right">
                 <img src="images/images-3.png" alt="">
-                <div class="pics-list-item-img--hover">
+                <div class="pics-list-item-img__flip">
                     <img src="images/pic-hover.png" alt="">
                     <h3>creatively designed</h3>
                     <p>Lorem ipsum dolor sit</p>
@@ -492,7 +560,7 @@
             </div>
             <div class="pics-list-item-img" data-aos="flip-right">
                 <img src="images/images-4.png" alt="">
-                <div class="pics-list-item-img--hover">
+                <div class="pics-list-item-img__flip">
                     <img src="images/pic-hover.png" alt="">
                     <h3>creatively designed</h3>
                     <p>Lorem ipsum dolor sit</p>
@@ -502,7 +570,7 @@
         <div class="pics-list-item pics-list-item--simple">
             <div class="pics-list-item-img" data-aos="flip-right">
                 <img src="images/images-5.png" alt="">
-                <div class="pics-list-item-img--hover">
+                <div class="pics-list-item-img__flip">
                     <img src="images/pic-hover.png" alt="">
                     <h3>creatively designed</h3>
                     <p>Lorem ipsum dolor sit</p>
@@ -512,7 +580,7 @@
         <div class="pics-list-item">
             <div class="pics-list-item-img" data-aos="flip-right">
                 <img src="images/images-6.png" alt="">
-                <div class="pics-list-item-img--hover">
+                <div class="pics-list-item-img__flip">
                     <img src="images/pic-hover.png" alt="">
                     <h3>creatively designed</h3>
                     <p>Lorem ipsum dolor sit</p>
@@ -520,7 +588,7 @@
             </div>
             <div class="pics-list-item-img" data-aos="flip-right">
                 <img src="images/images-7.png" alt="">
-                <div class="pics-list-item-img--hover">
+                <div class="pics-list-item-img__flip">
                     <img src="images/pic-hover.png" alt="">
                     <h3>creatively designed</h3>
                     <p>Lorem ipsum dolor sit</p>
@@ -539,7 +607,8 @@
                 </div>
                 <div class="quote-list-item-content">
                     <p class="quote-list-item-content__text">
-                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
                         labore
                         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
                     </p>
@@ -553,7 +622,8 @@
                 </div>
                 <div class="quote-list-item-content">
                     <p class="quote-list-item-content__text">
-                        “One Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        “One Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt
                         ut
                         labore
                         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
@@ -568,7 +638,8 @@
                 </div>
                 <div class="quote-list-item-content">
                     <p class="quote-list-item-content__text">
-                        “Two Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        “Two Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt
                         ut
                         labore
                         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
@@ -582,9 +653,10 @@
 
 <div class="review">
     <div class="container">
-        <h2 class="section__ttl">Happy Clients</h2>
-        <h3 class="section__sub">What people say</h3>
-
+        <div class="section-outline">
+            <h2 class="section-outline__ttl">Happy Clients</h2>
+            <h3 class="section-outline__sub">What people say</h3>
+        </div>
         <div class="review-list">
             <div class="review-list-item" data-aos="fade-right" data-aos-duration="500" data-aos-offset="-500">
                 <div class="review-list-item__avatar">
@@ -593,9 +665,10 @@
                 <div class="review-list-item-info">
                     <p class="review-list-item-info__name">Matthew Dix</p>
                     <p class="review-list-item-info__role">Graphic Design</p>
-                    <p class="review-list-item-info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                        do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                    <p class="review-list-item-info__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim.
+                    </p>
                 </div>
             </div>
             <div class="review-list-item" data-aos="fade-left" data-aos-duration="500" data-aos-offset="-500">
@@ -605,9 +678,10 @@
                 <div class="review-list-item-info">
                     <p class="review-list-item-info__name">Nick Karvounis</p>
                     <p class="review-list-item-info__role">Graphic Design</p>
-                    <p class="review-list-item-info__text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    <p class="review-list-item-info__text">
+                        Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam
+                    </p>
                 </div>
             </div>
             <div class="review-list-item" data-aos="fade-right" data-aos-duration="500" data-aos-offset="-500">
@@ -617,9 +691,9 @@
                 <div class="review-list-item-info">
                     <p class="review-list-item-info__name">Jaelynn Castillo</p>
                     <p class="review-list-item-info__role">Graphic Design</p>
-                    <p class="review-list-item-info__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    <p class="review-list-item-info__text">
+                        Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam</p>
                 </div>
             </div>
             <div class="review-list-item" data-aos="fade-left" data-aos-duration="500" data-aos-offset="-500">
@@ -629,20 +703,22 @@
                 <div class="review-list-item-info">
                     <p class="review-list-item-info__name">Mike Petrucci</p>
                     <p class="review-list-item-info__role">Graphic Design</p>
-                    <p class="review-list-item-info__text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                    <p class="review-list-item-info__text">
+                        Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="blog" data-aos="fade-right">
+<div id="blog" class="blog" data-aos="fade-right">
     <div class="container">
-        <h2 class="section__ttl">Our stories</h2>
-        <h3 class="section__sub">Latest blog</h3>
-
+        <div class="section-outline">
+            <h2 class="section-outline__ttl">Our stories</h2>
+            <h3 class="section-outline__sub">Latest blog</h3>
+        </div>
         <div class="blog-list">
             <div class="blog-list-item" data-aos="fade-up" data-aos-offset="-500">
                 <a href="#" class="blog-list-item-img">
@@ -653,11 +729,13 @@
                     </div>
                 </a>
                 <div class="blog-list-item-content">
-                    <h3 class="blog-list-item-content__title">Lorem ipsum dolor sit amet</h3>
-                    <p class="blog-list-item-content__text">Consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut
-                        labore et dolore magna aliqua.Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
+                    <h3 class="blog-list-item-content__ttl">Lorem ipsum dolor sit amet</h3>
+                    <p class="blog-list-item-content__txt">
+                        Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna
+                        aliqua.
+                    </p>
                 </div>
                 <div class="blog-list-item__action">
                     <img src="images/eye.png" alt="">
@@ -675,10 +753,11 @@
                     </div>
                 </a>
                 <div class="blog-list-item-content">
-                    <h3 class="blog-list-item-content__title">Lorem ipsum dolor sit amet</h3>
-                    <p class="blog-list-item-content__text">Consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut
-                        labore et dolore magna aliqua.</p>
+                    <h3 class="blog-list-item-content__ttl">Lorem ipsum dolor sit amet</h3>
+                    <p class="blog-list-item-content__txt">
+                        Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.
+                    </p>
                 </div>
                 <div class="blog-list-item__action">
                     <img src="images/eye.png" alt="">
@@ -696,10 +775,11 @@
                     </div>
                 </a>
                 <div class="blog-list-item-content">
-                    <h3 class="blog-list-item-content__title">Lorem ipsum dolor sit amet</h3>
-                    <p class="blog-list-item-content__text">Consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut
-                        labore et dolore magna aliqua.</p>
+                    <h3 class="blog-list-item-content__ttl">Lorem ipsum dolor sit amet</h3>
+                    <p class="blog-list-item-content__txt">
+                        Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.
+                    </p>
                 </div>
                 <div class="blog-list-item__action">
                     <img src="images/eye.png" alt="">
@@ -722,20 +802,38 @@
         <div class="footer-inner">
             <div class="footer-inner-contact">
                 <img src="images/f-logo.png" alt="" class="footer-inner-contact__logo">
-                <p class="footer-inner-contact__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p class="footer-inner-contact__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                </p>
                 <p class="footer-inner-contact__followers"><span>15k</span> followers</p>
                 <div class="footer-inner-contact__social">
                     <span>Follow Us: </span>
-                    <img src="images/f-fb.png" alt="">
-                    <img src="images/f-tw.png" alt="">
-                    <img src="images/f-ins.png" alt="">
-                    <img src="images/d-pin.png" alt="">
-                    <img src="images/f-gg.png" alt="">
-                    <img src="images/f-you.png" alt="">
-                    <img src="images/f-dri.png" alt="">
-                    <img src="images/f-tum.png" alt="">
+                    <a href="#">
+                        <img src="images/f-fb.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/f-tw.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/f-ins.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/d-pin.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/f-gg.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/f-you.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/f-dri.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/f-tum.png" alt="">
+                    </a>
                 </div>
                 <div class="footer-inner-contact-form">
                     <input type="text" class="footer-inner-contact-form__input" placeholder="Your Email">
@@ -773,15 +871,33 @@
             <div class="footer-inner-social">
                 <h3 class="footer-inner-social__title">Instagram</h3>
                 <div class="footer-inner-social__img">
-                    <img src="images/f-s-1.png" alt="">
-                    <img src="images/f-s-2.png" alt="">
-                    <img src="images/f-s-3.png" alt="">
-                    <img src="images/f-s-4.png" alt="">
-                    <img src="images/f-s-5.png" alt="">
-                    <img src="images/f-s-6_.png" alt="">
-                    <img src="images/f-s-7.png" alt="">
-                    <img src="images/f-s-8.png" alt="">
-                    <img src="images/f-s-9.png" alt="">
+                    <a href="#">
+                        <img src="images/f-s-1.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/f-s-2.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/f-s-3.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/f-s-4.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/f-s-5.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/f-s-6_.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/f-s-7.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/f-s-8.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/f-s-9.png" alt="">
+                    </a>
                 </div>
                 <p class="footer-inner-social__txt">View more photos</p>
             </div>
@@ -800,4 +916,5 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/main.js"></script>
 </body>
+
 </html>
