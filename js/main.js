@@ -79,7 +79,7 @@ $(document).ready(function () {
     });
   });
 
-  let factsNumber = document.querySelectorAll(".facts-list-item__number");
+  let factsNumber = document.querySelectorAll(".facts-list-item__num");
   factsNumber.forEach(function (item) {
     let target = parseInt(item.getAttribute("data-target"));
     let duration = 5000;
@@ -101,4 +101,29 @@ $(document).ready(function () {
       }
     }, stepTime);
   }
+
+  let modal = document.getElementById('pics-modal');
+  let listPics = document.querySelectorAll('.pics-list-item-img__bg');
+  let modalImg = document.getElementById("popup-modal-inner__img");
+  let closeModal = document.querySelector('.popup-modal-inner__close');
+  let popupInner = document.querySelector('.popup-modal-inner');
+
+  listPics.forEach(function (pic) {
+    pic.addEventListener('click', function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    })
+  })
+
+  const hideModal = () => {
+    modal.style.display = 'none';
+  };
+
+  closeModal.addEventListener('click', hideModal);
+
+  modal.addEventListener('click', (event) => {
+    if (!popupInner.contains(event.target)) {
+      hideModal();
+    }
+  });
 });
